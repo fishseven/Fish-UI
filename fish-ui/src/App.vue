@@ -1,15 +1,13 @@
 <template>
-<div>hi</div>
-<Fish />
+<div>导航栏 | <router-link to="/">Fish </router-link>| <router-link to="/fish2">Fish 2</router-link>
+</div>
+<hr>
+<router-view />
 </template>
 
 <script>
-import Fish from './components/Fish.vue'
-
 export default {
     name: 'App',
-    components: {
-        Fish
-    }
+
 }
 </script>
