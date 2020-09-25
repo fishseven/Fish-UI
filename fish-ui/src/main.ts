@@ -1,6 +1,8 @@
+import './index.scss'
+import './lib/fish.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.scss'
+
 import { router } from './Router'
 
 

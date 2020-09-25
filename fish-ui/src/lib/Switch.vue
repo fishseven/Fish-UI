@@ -1,6 +1,6 @@
 <template>
 <div>
-    <button @click="toggle" :class="{checked:value}"><span></span></button>
+    <button class="fish-switch" @click="toggle" :class="{'fish-checked':value}"><span></span></button>
     <div>{{value}}</div>
 </div>
 </template>
@@ -24,11 +24,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
 
-button {
+.fish-switch {
     height: $h;
     width: $h * 2;
     border: none;
@@ -47,7 +47,7 @@ button {
         transition: all 250ms;
     }
 
-    &.checked {
+    &.fish-checked {
         background: #1890ff;
 
         >span {
@@ -65,7 +65,7 @@ button {
         }
     }
 
-    &.checked:active {
+    &.fish-checked:active {
         >span {
             width: $h2 + 4px;
             margin-left: -4px;
