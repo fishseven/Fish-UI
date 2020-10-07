@@ -3,7 +3,7 @@
 打开终端运行下列命令：
 
 ```
-npm install king-ui
+npm install fish-ui
 ```
 
 或
