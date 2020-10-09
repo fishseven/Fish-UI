@@ -10,8 +10,9 @@
     </li>
 
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
-        <use xlink:href="#icon-menu"></use>
+        <use xlink:href="#icon-menup"></use>
     </svg>
+
 </div>
 </template>
 
@@ -86,6 +87,7 @@ li {
     }
 
     >.toggleAside {
+        color: orange;
         width: 32px;
         height: 32px;
         // background: red;

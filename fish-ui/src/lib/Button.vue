@@ -57,7 +57,7 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$blue: #f29d39;
 $radius: 4px;
 $red: red;
 $grey: grey;

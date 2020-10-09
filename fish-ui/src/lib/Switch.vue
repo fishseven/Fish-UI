@@ -48,7 +48,7 @@ $h2: $h - 4px;
     }
 
     &.fish-checked {
-        background: #1890ff;
+        background: #f29d39;
 
         >span {
             left: calc(100% - #{$h2} - 2px);

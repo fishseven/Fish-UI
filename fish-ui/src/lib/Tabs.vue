@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #40a9ff;
+$blue: #f29d39;
 $color: #333;
 $border-color: #d9d9d9;
 
