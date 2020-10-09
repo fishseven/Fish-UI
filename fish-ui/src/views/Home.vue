@@ -1,13 +1,14 @@
 <template>
-<div>
+<div class="main">
     <div class="topnavAndBanner">
         <Topnav />
         <div class="banner">
-            <h1>Fish UI</h1>
+            <Icon />
+
             <h2>一个厉害的UI</h2>
             <p class="actions">
                 <a href="https://github.com/fishseven/Fish-UI">GitHub</a>
-                <router-link to="/doc">开始</router-link>
+                <router-link class="start-butt" to="/doc">开始</router-link>
             </p>
         </div>
     </div>
@@ -41,9 +42,11 @@
 
 <script lang="ts">
 import Topnav from '../components/Topnav.vue'
+import Icon from '../components/Icon.vue'
 export default {
     components: {
-        Topnav
+        Topnav,
+        Icon
     }
 }
 </script>
@@ -53,9 +56,26 @@ $green: #02bcb0;
 $border-radius: 4px;
 $color: #007974;
 
+h2 {
+    font-family: 黑体;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+p {
+    font-size: 12px;
+    color: #999
+}
+
 .topnavAndBanner {
-    background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
-    clip-path: ellipse(80% 60% at 50% 40%);
+    /*background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+    clip-path: ellipse(80% 60% at 50% 40%);*/
+    background: #1b1b1b
 }
 
 .features {
@@ -132,8 +152,8 @@ $color: #007974;
 
         a {
             margin: 0 8px;
-            background: $green;
-            color: white;
+            background: white;
+            color: black;
             display: inline-block;
             // $h: 28px;
             // height: $h;
@@ -141,11 +161,17 @@ $color: #007974;
             // border-radius: $h/2;
             padding: 8px 24px;
             border-radius: $border-radius;
+            border: 1px solid #f29d39;
 
             &:hover {
                 text-decoration: none;
             }
         }
+
     }
+}
+
+.start-butt {
+    background: #f29d39 !important;
 }
 </style>
