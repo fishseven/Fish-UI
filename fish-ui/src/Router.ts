@@ -21,8 +21,8 @@ const md = string => h(Markdown, { content: string, key: string })
 export const router = createRouter({
     history: history,
     routes:[
-        {path:'/',component:Icon},
-        {path:'/home',component:Home},
+        // {path:'/',component:Icon},
+        {path:'/',component:Home},
         {path:'/Doc',component:Doc,children:[
             { path: "", redirect: '/doc/intro' },
             { path: "intro", component: md(intro) },
