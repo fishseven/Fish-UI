@@ -9,7 +9,7 @@ npm install fish-ui
 或
 
 ```
-yarn add king-ui
+yarn add fish-ui
 ```
 
 下一节：[开始使用](#/doc/get-started)
